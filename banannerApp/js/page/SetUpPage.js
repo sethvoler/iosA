@@ -58,7 +58,7 @@ export default class SetUpPage extends Component<Props> {
             }}>
             <View style={styles.item}>
               <Text style={styles.title}>账号与安全</Text>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
             </View>
           </TouchableOpacity> 
           <TouchableOpacity onPress={() => {
@@ -66,7 +66,7 @@ export default class SetUpPage extends Component<Props> {
             }}>
             <View style={styles.item}>
               <Text style={styles.title}>消息设置</Text>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
             </View>
           </TouchableOpacity>
           <TouchableOpacity onPress={() => {this._clear();}}>

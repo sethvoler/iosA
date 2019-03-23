@@ -1,4 +1,7 @@
 "use strict"
+// 'AdobeHeitiStd-Regular'
+// 'ArialMT'
+// 'SourceHanSansCN-Medium'
 
 import {Dimensions, StatusBar, Platform, PixelRatio} from 'react-native';
 

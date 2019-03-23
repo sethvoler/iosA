@@ -57,6 +57,9 @@
 		BDCD606A3B8D416D90AD6D7A /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 268592BAB8814613A51F3243 /* MaterialCommunityIcons.ttf */; };
 		CAB043FD3D904B04988A5906 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 945CE40246A940EA8CE6DB6B /* FontAwesome5_Regular.ttf */; };
 		E31271422243307100CB6D34 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = E31271412243307100CB6D34 /* bundle */; };
+		E34D9CFA2246188800DDBF7A /* ArialMT 1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E34D9CCB2246188700DDBF7A /* ArialMT 1.ttf */; };
+		E34D9CFB2246188800DDBF7A /* Adobe Heiti Std R.otf in Resources */ = {isa = PBXBuildFile; fileRef = E34D9CCC2246188700DDBF7A /* Adobe Heiti Std R.otf */; };
+		E34D9CFC2246188800DDBF7A /* SourceHanSansCN-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E34D9CCD2246188700DDBF7A /* SourceHanSansCN-Medium.ttf */; };
 		E3DD3E742244CBB70087AA43 /* bundle in Resources */ = {isa = PBXBuildFile; fileRef = E3DD3E472244CBB70087AA43 /* bundle */; };
 		E8FD9167864A4E54B62DED70 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA6C0F7071034857ABFD3325 /* Ionicons.ttf */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
@@ -444,6 +447,9 @@
 		DA11DE3BC20D4173A63209BA /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		E31271412243307100CB6D34 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		E34D9C0E224503E200DDBF7A /* banannerApp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = banannerApp.xcodeproj; sourceTree = "<group>"; };
+		E34D9CCB2246188700DDBF7A /* ArialMT 1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArialMT 1.ttf"; sourceTree = "<group>"; };
+		E34D9CCC2246188700DDBF7A /* Adobe Heiti Std R.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Adobe Heiti Std R.otf"; sourceTree = "<group>"; };
+		E34D9CCD2246188700DDBF7A /* SourceHanSansCN-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceHanSansCN-Medium.ttf"; sourceTree = "<group>"; };
 		E3DD3E472244CBB70087AA43 /* bundle */ = {isa = PBXFileReference; lastKnownFileType = folder; path = bundle; sourceTree = "<group>"; };
 		E4B390ADD5A34BD69CF7CCFD /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -695,6 +701,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				E34D9CC92246188700DDBF7A /* assets */,
 				E34D9C0E224503E200DDBF7A /* banannerApp.xcodeproj */,
 				13B07FAE1A68108700A75B9A /* banannerApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
@@ -781,6 +788,25 @@
 		E34D9C0F224503E200DDBF7A /* Products */ = {
 			isa = PBXGroup;
 			name = Products;
+			sourceTree = "<group>";
+		};
+		E34D9CC92246188700DDBF7A /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E34D9CCA2246188700DDBF7A /* fonts */,
+			);
+			name = assets;
+			path = ../assets;
+			sourceTree = "<group>";
+		};
+		E34D9CCA2246188700DDBF7A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E34D9CCB2246188700DDBF7A /* ArialMT 1.ttf */,
+				E34D9CCC2246188700DDBF7A /* Adobe Heiti Std R.otf */,
+				E34D9CCD2246188700DDBF7A /* SourceHanSansCN-Medium.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		F94C10EE9D03470CBCCA6E80 /* Resources */ = {
@@ -1325,13 +1351,16 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 				F544424D3AEA4F6CB471F010 /* AntDesign.ttf in Resources */,
+				E34D9CFB2246188800DDBF7A /* Adobe Heiti Std R.otf in Resources */,
 				3F7C82D97BB54B78B246740F /* Entypo.ttf in Resources */,
 				6DA2EB4D613D4BB0AB535419 /* EvilIcons.ttf in Resources */,
 				8884CCED22FF4567AF670071 /* Feather.ttf in Resources */,
 				7AAF4FA71D5D45E3A0CFAF18 /* FontAwesome.ttf in Resources */,
 				5519D606D798463EB6383F5A /* FontAwesome5_Brands.ttf in Resources */,
+				E34D9CFA2246188800DDBF7A /* ArialMT 1.ttf in Resources */,
 				CAB043FD3D904B04988A5906 /* FontAwesome5_Regular.ttf in Resources */,
 				298D186C4ADB489BB89D034D /* FontAwesome5_Solid.ttf in Resources */,
+				E34D9CFC2246188800DDBF7A /* SourceHanSansCN-Medium.ttf in Resources */,
 				E31271422243307100CB6D34 /* bundle in Resources */,
 				868F79E477CB451FBCDCB36E /* Foundation.ttf in Resources */,
 				E8FD9167864A4E54B62DED70 /* Ionicons.ttf in Resources */,
@@ -1374,7 +1403,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;

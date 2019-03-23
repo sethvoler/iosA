@@ -32,37 +32,7 @@ export default class PlayPage extends Component<Props> {
         <Text style={styles.title}>最新评论</Text>
         <View style={styles.line}></View>
         <ScrollView style={{width: unitWidth*750,}}>
-        <Pl 
-            name={'风华'}
-            icon={true}
-            time={'1分钟前'}
-            content={'楼下的，我不是闲的，我是甜的～'}
-            num={666} />
-        <Pl 
-            name={'风华对门的二妞'}
-            icon={true}
-            time={'10分钟前'}
-            content={'风哥哥，你又闲了啊？去逛公园啊～'}
-            num={520} />
-        <Pl 
-            name={'风华的邻居'}
-            icon={true}
-            time={'50分钟前'}
-            content={'风少晚上去哪？'}
-            num={999} />
           <Pl 
-            name={'风华的迷弟'}
-            icon={true}
-            time={'59分钟前'}
-            content={'华哥，你在哪？'}
-            num={124} />
-          <Pl 
-            name={'风华'}
-            icon={true}
-            time={'1小时前'}
-            content={'忙完了，可以约起来了，我要放松下！'}
-            num={256} />
-          {/* <Pl 
             name={'丝丝狐'}
             icon={true}
             time={'6分钟前'}
@@ -109,7 +79,7 @@ export default class PlayPage extends Component<Props> {
             icon={false}
             time={'1小时前'}
             content={'白头发的不错哦'}
-            num={4} /> */}
+            num={4} />
         </ScrollView>
         <Bpl />
       </View>

@@ -47,21 +47,25 @@ export default class WelcomePage extends Component<Props> {
   }
   render() {
     return (
-      <LinearGradient colors={['#FE77AB', '#FE7791']} style={styles.container}>
-        <View style={styles.out}>
-          <View style={styles.in}>
-            <Image source={require('../res/image/wt.png')} style={styles.wt}></Image>
-          </View>
-        </View>
-        <Text style={styles.welcome}>全球购</Text>
-        <Text style={styles.content}>汇聚了销售海外优质商品的卖家</Text>
-        <Text style={styles.content}>“淘遍全球”的心愿</Text>
-        <Image source={require('../res/image/wb.jpg')} style={styles.wb}></Image>
+      <View style={{flex: 1}}>
+        <Image source={require('../res/image/qdy.jpg')} style={styles.qdy}></Image>
         <Text style={styles.jump} onPress={() => {
           NavigationUtil.resetToHomePage({
             navigation: this.props.navigation
           });}}>{this.state.sec}</Text>
-      </LinearGradient>
+
+      </View>
+      // <LinearGradient colors={['#FE77AB', '#FE7791']} style={styles.container}>
+      //   <View style={styles.out}>
+      //     <View style={styles.in}>
+      //       <Image source={require('../res/image/wt.png')} style={styles.wt}></Image>
+      //     </View>
+      //   </View>
+      //   <Text style={styles.welcome}>全球购</Text>
+      //   <Text style={styles.content}>汇聚了销售海外优质商品的卖家</Text>
+      //   <Text style={styles.content}>“淘遍全球”的心愿</Text>
+      //   <Image source={require('../res/image/wb.jpg')} style={styles.wb}></Image>
+      // </LinearGradient>
     );
   }
 }
@@ -71,6 +75,15 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     backgroundColor: '#F5FCFF',
+  },
+  qdy: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0,
+    width: unitWidth*750,
+    height: unitHeight*1334,
   },
   wb: {
     position: 'absolute',

@@ -1,6 +1,6 @@
 
 import React, {Component} from 'react';
-import {Image, StyleSheet, Text, View, Alert} from 'react-native'; 
+import {Image, StyleSheet, Text, View, Alert, TouchableOpacity} from 'react-native'; 
 import MySwiper from './MySwiper';
 import {unitWidth, unitHeight, fontscale}from '../util/AdapterUtil';
 import NavigationUtil from '../navigator/NavigationUtil';
@@ -32,12 +32,17 @@ export default class Video extends Component<Props> {
          isHeader
          ?  <View style={styles.header}>
               <View style={styles.titleWrap}>
-                <Text style={styles.border}>{title}</Text>
+                <Text style={styles.border}></Text>
                 <Text style={styles.title}>{title}</Text>
               </View>
-              <Text style={styles.more} onPress={() => {NavigationUtil.goToPage({
-              navigation: this.props.navigation
-            }, 'MorePage');}}>更多 ></Text>
+              <TouchableOpacity onPress={() => {NavigationUtil.goToPage({
+                  navigation: this.props.navigation
+                }, 'MorePage');}}>
+                <View style={styles.moreBox}>
+                  <Text style={styles.more}>更多</Text>
+                  <Image style={styles.moreIcon} source={require('../res/image/ra.png')}></Image>
+                </View>
+              </TouchableOpacity>
             </View>
           : null
         }
@@ -72,12 +77,24 @@ const styles = StyleSheet.create({
   title: {
     height: unitWidth*26,
     color: '#2A2A2A',
-    fontSize: 14,
+    fontSize: unitWidth*27,
     fontWeight: 'bold',
+    fontFamily: 'SourceHanSansCN-Medium',
+  },
+  moreBox: {
+    flexDirection: 'row',
   },
   more: {
     color: '#2A2A2A',
-    fontSize: 14,
+    fontSize: unitWidth*27,
+    fontFamily: 'AdobeHeitiStd-Regular',
+  },
+  moreIcon: {
+    height: unitWidth*20,
+    width: unitWidth*11,
+    marginLeft: unitWidth*10,
+    position: 'relative',
+    top: unitWidth*4,
   },
   main: {
     width: unitWidth*750,

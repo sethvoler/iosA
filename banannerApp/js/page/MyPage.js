@@ -7,12 +7,7 @@ import MyTop from '../common/MyTop';
 import MyMiddle from '../common/MyMiddle';
 import MyList from '../common/MyList';
 
-import { connect } from "mobx-react";
-import { observer, inject } from "mobx-react";
-
 type Props = {};
-// @inject(["store"]) // 注入对应的store
-// @observer // 监听当前组件
 export default class MyPage extends Component<Props> {
   static navigationOptions = {
     header: null,
@@ -30,8 +25,11 @@ export default class MyPage extends Component<Props> {
       <View style={styles.container}>
         <MyTop status={this.state.status}/>
         <MyMiddle />
-        <View style={styles.line}></View>
-        <MyList title={'购买会员'} icon={require('../res/image/gm.png')}/>
+        <TouchableOpacity onPress={() => {
+            NavigationUtil.goToPage({navigation: this.props.navigation}, 'VipPage');
+          }}>
+          <MyList title={'购买会员'} icon={require('../res/image/gm.png')}/>
+        </TouchableOpacity>
         <TouchableOpacity onPress={() => {
             NavigationUtil.goToPage({navigation: this.props.navigation}, 'MMPage');
           }}>
@@ -43,6 +41,9 @@ export default class MyPage extends Component<Props> {
           }}>
           <MyList title={'浏览记录'} icon={require('../res/image/ll.png')}/>
         </TouchableOpacity>
+        <View style={styles.line}></View>
+        <MyList title={'关于香蕉巴巴'} icon={require('../res/image/gy.png')} big={false}/>
+        <MyList title={'分享给Ta'} icon={require('../res/image/fxx.png')} big={false}/>
       </View>
     );
   }
@@ -55,7 +56,11 @@ const styles = StyleSheet.create({
     paddingRight: unitWidth*20,
   },
   line: {
+    position: 'relative',
+    left: unitWidth*-20,
     height: unitWidth*10,
+    width: unitWidth*770,
+    backgroundColor: '#F4F4F4',
   },
   welcome: {
     fontSize: 20,

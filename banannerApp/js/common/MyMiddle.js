@@ -23,7 +23,7 @@ export default class MyTop extends Component<Props> {
 
 const shadowOpt = {
   width: unitWidth*710,
-  height: unitWidth*260,
+  height: unitWidth*280,
   color: '#000',
   border:  unitWidth*8,
   radius: 5,
@@ -38,7 +38,7 @@ const shadowOpt = {
 const styles = StyleSheet.create({
   wrap: {
     width: unitWidth*710,
-    height: unitWidth*260,
+    height: unitWidth*280,
     padding: unitWidth*25,
     backgroundColor: 'rgba(254,254,254,1)',
     borderRadius: 5,
@@ -48,19 +48,22 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   title: {
-    fontSize: 13,
+    fontSize: unitWidth*26,
     color: '#161616',
+    fontFamily: 'SourceHanSansCN-Medium',
   },
   content: {
-    fontSize: 13,
+    fontSize: unitWidth*26,
+    fontFamily: 'SourceHanSansCN-Medium',
     color: '#9c9c9c',
   },
   inner: {
-    fontSize: 13,
+    fontSize: unitWidth*26,
+    fontFamily: 'SourceHanSansCN-Medium',
     color: '#f11',
   },
   banner: {
-    marginTop: unitHeight*20,
+    marginTop: unitWidth*20,
     width: unitWidth*653,
     height: unitWidth*164,
     borderRadius: 9,

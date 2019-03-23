@@ -7,7 +7,6 @@ import NavigationUtil from '../navigator/NavigationUtil';
 type Props = {};
 export default class EditPage extends Component<Props> {
   static navigationOptions = {
-    //headerTitle: (<Text style={{ flex: 1, textAlign: 'center' }}>设置</Text>),
     headerBackTitle: null,
     headerTintColor: '#7E7E7E',
     headerTitleStyle: {
@@ -51,7 +50,7 @@ export default class EditPage extends Component<Props> {
             <Text style={styles.title}>头像</Text>
             <View style={styles.right}>
               <Image source={require('../1.jpeg')} style={styles.lArrow}></Image>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
             </View> 
           </View>
           <TouchableOpacity onPress={() => {
@@ -61,7 +60,7 @@ export default class EditPage extends Component<Props> {
               <Text style={styles.title}>昵称</Text>
               <View style={styles.right}>
                 <Text style={styles.title}>嘿嘿三郎</Text>
-                <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+                <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
               </View> 
             </View>
           </TouchableOpacity>
@@ -72,7 +71,7 @@ export default class EditPage extends Component<Props> {
               <Text style={styles.title}>个性签名</Text>
               <View style={styles.right}>
                 <Text style={styles.title}>这家伙很懒，什么都没留下。</Text>
-                <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+                <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
               </View> 
             </View>
           </TouchableOpacity>
@@ -84,7 +83,7 @@ export default class EditPage extends Component<Props> {
               <Text style={styles.title}>性别</Text>
               <View style={styles.right}>
                 <Text style={styles.title}>{this.state.sex}</Text>
-                <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+                <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
               </View> 
             </View> 
           </TouchableOpacity>
@@ -92,14 +91,14 @@ export default class EditPage extends Component<Props> {
             <Text style={styles.title}>生日</Text>
             <View style={styles.right}>
               <Text style={styles.content}>待完善</Text>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
             </View> 
           </View>
           <View style={styles.item}>
             <Text style={styles.title}>地区</Text>
             <View style={styles.right}>
               <Text style={styles.content}>待完善</Text>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
             </View> 
           </View>
         </View> 
@@ -164,6 +163,9 @@ const styles = StyleSheet.create({
   lArrow: {
     height: unitWidth*50,
     width: unitWidth*50,
+    borderRadius: unitWidth*25,
+    borderWidth: unitWidth*1,
+    borderColor: 'rgba(0,0,0,.8)'
   },
   arrow: {
     marginLeft: unitWidth*15,

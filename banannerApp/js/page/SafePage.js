@@ -33,7 +33,7 @@ export default class SetUpPage extends Component<Props> {
               <Text style={styles.title}>手机号绑定</Text>
               <View style={styles.right}>
                 <Text style={styles.redContent}>17610268263</Text>
-                <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+                <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
               </View>
             </View>
           </TouchableOpacity>
@@ -80,6 +80,7 @@ const styles = StyleSheet.create({
   right: {
     flexDirection: 'row',
     justifyContent: 'space-between',
+    alignItems: 'center',
   },
   redContent: {
     marginRight: unitWidth*30,

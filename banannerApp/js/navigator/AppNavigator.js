@@ -42,7 +42,7 @@ import EditMsgPage from '../page/EditMsgPage';
 import ImgsPage from '../page/ImgsPage';
 import MorePage from '../page/MorePage';
 import PlayPage from '../page/PlayPage';
-
+import VipPage from '../page/VipPage';
 
 // import {connect} from 'react-redux';
 // import {
@@ -186,6 +186,9 @@ const MainNavigator = createStackNavigator({
   },
   MyPage: {
     screen: MyPage
+  },
+  VipPage: {
+    screen: VipPage
   },
   ImgsPage: {
     screen: ImgsPage

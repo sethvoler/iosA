@@ -13,9 +13,6 @@ import HomePage from '../page/HomePage';
 import VideoPage from '../page/VideoPage';
 import ImagePage from '../page/ImagePage';
 import MyPage from '../page/MyPage';
-import AntDesign from 'react-native-vector-icons/AntDesign';
-import Entypo from 'react-native-vector-icons/Entypo';
-import NavigationUtil from './NavigationUtil';
 import {BottomTabBar} from 'react-navigation-tabs';
 
 const TABS = {
@@ -27,36 +24,54 @@ const TABS = {
         color: '#182147',
         fontSize: 10,
       },
-      tabBarIcon: ({tintColor, focused}) => (
-        <Image source={require('../res/image/sy.png')} style={styles.sy}></Image>
-      )
+      tabBarIcon: ({tintColor, focused}) => {
+        if (focused) {
+          return (<Image source={require('../res/image/syc.png')} style={styles.sy}></Image>)
+        } else {
+          return (<Image source={require('../res/image/sy.png')} style={styles.sy}></Image>)
+        }
+      }
     }
   },
   VideoPage: {
     screen: VideoPage,
     navigationOptions: {
       tabBarLabel: '视频',
-      tabBarIcon: ({tintColor, focused}) => (
-        <Image source={require('../res/image/sp.png')} style={styles.sy}></Image>
-      )
+      showIcon: true,
+      tabBarIcon: ({tintColor, focused}) => 
+      {
+        if (focused) {
+          return (<Image source={require('../res/image/spc.png')} style={styles.sy}></Image>)
+        } else {
+          return (<Image source={require('../res/image/sp.png')} style={styles.sy}></Image>)
+        }
+      }
     }
   },
   ImagePage: {
     screen: ImagePage,
     navigationOptions: {
       tabBarLabel: '图窝',
-      tabBarIcon: ({tintColor, focused}) => (
-        <Image source={require('../res/image/tw.png')} style={styles.sy}></Image>
-      )
+      tabBarIcon: ({tintColor, focused}) => {
+        if (focused) {
+          return (<Image source={require('../res/image/twc.png')} style={styles.sy}></Image>)
+        } else {
+          return (<Image source={require('../res/image/tw.png')} style={styles.sy}></Image>)
+        }
+      }
     }
   },
   MyPage: {
     screen: MyPage,
     navigationOptions: {
       tabBarLabel: '我的',
-      tabBarIcon: ({tintColor, focused}) => (
-        <Image source={require('../res/image/wd.png')} style={styles.sy}></Image>
-      )
+      tabBarIcon: ({tintColor, focused}) => {
+        if (focused) {
+          return (<Image source={require('../res/image/wdc.png')} style={styles.sy}></Image>)
+        } else {
+          return (<Image source={require('../res/image/wd.png')} style={styles.sy}></Image>)
+        }
+      }
     }
   }
 };

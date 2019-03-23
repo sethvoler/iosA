@@ -70,7 +70,7 @@ export default class BindPhonePage extends Component<Props> {
           <View style={styles.item}>
             <View style={styles.innerItem}>
               <Text style={styles.title}>+86</Text>
-              <Image source={require('../1.jpeg')} style={styles.arrow}></Image>
+              <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
               <Text style={styles.title}>17610268263</Text>
             </View>      
           </View>
@@ -121,6 +121,7 @@ const styles = StyleSheet.create({
   },
   innerItem: {
     flexDirection: 'row',
+    alignItems: 'center',
   },
   arrow: {
     height: unitWidth*27,

@@ -120,7 +120,8 @@ const styles = StyleSheet.create({
     borderRadius: unitWidth*29,
     textAlign: 'center',
     color: '#fff',
-    fontSize: 14,
+    fontSize: unitWidth*28,
+    fontFamily: 'SourceHanSansCN-Medium',
   },
   logSetIcon: {
     position: 'relative',
@@ -131,28 +132,29 @@ const styles = StyleSheet.create({
   noLog: {
     marginTop: unitWidth*20,
     color: '#ADADAD',
-    fontSize: 14,
+    fontSize: unitWidth*28,
+    fontFamily: 'SourceHanSansCN-Medium',
   },
   vip: {
     color: '#fff',
-    fontSize: 12,
+    fontSize: unitWidth*24,
     position: 'relative',
     top: -34*unitWidth,
     left: 50*unitWidth,
   },
   container: {
     width: unitWidth*710,
-    height: unitHeight*242,
+    //height: unitWidth*242,
     paddingLeft: unitWidth*20,
     paddingRight: unitWidth*30,
-    borderBottomWidth: 2*unitHeight,
+    borderBottomWidth: 2*unitWidth,
     borderBottomColor: 'rgba(245,245,245,1)',
   },
   top: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    marginBottom: unitHeight*35,
+    marginBottom: unitWidth*35,
   },
   topLeft: {
     flexDirection: 'row',
@@ -174,9 +176,10 @@ const styles = StyleSheet.create({
     height: unitWidth*24,
   },
   name: {
-    marginTop: unitHeight*10,
-    fontSize: 16,
+    marginTop: unitWidth*10,
+    fontSize: unitWidth*32,
     color: '#161616',
+    fontFamily: 'SourceHanSansCN-Medium',
   },
   icon: {
     marginTop: unitWidth*9,
@@ -188,7 +191,7 @@ const styles = StyleSheet.create({
     height: unitWidth*38,
   },
   lists: {
-    height: unitHeight*70,
+    //height: unitWidth*170,
     flexDirection: 'row',
     justifyContent: 'space-between',
     paddingLeft: unitWidth*42,
@@ -199,12 +202,14 @@ const styles = StyleSheet.create({
     alignItems: 'center', 
   },
   item1: {
-    fontSize: 16,
+    fontSize: unitWidth*32,
     color: '#1f1f1f',
+    fontFamily: 'ArialMT',
   },
   item2: {
-    fontSize: 12,
-    marginTop: unitHeight*18,
+    fontSize: unitWidth*24,
+    marginTop: unitWidth*18,
     color: '#1f1f1f',
+    fontFamily: 'AdobeHeitiStd-Regular',
   }
 });

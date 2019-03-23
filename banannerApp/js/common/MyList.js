@@ -4,11 +4,11 @@ import {unitWidth, unitHeight, fontscale}from '../util/AdapterUtil';
 
 export default class MyList extends Component<Props> {
   render () {
-    const {title, icon} = this.props;
+    const {title, icon, big=true} = this.props;
     return (
       <View style={styles.wrap}>
         <View style={styles.left}>
-          <Image source={icon} style={styles.icon}></Image>
+          <Image source={icon} style={big ? styles.icon : styles.change}></Image>
           <Text style={styles.title}>{title}</Text>
         </View>
         <Image source={require('../res/image/ra.png')} style={styles.arrow}></Image>
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
   },
   left: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
+    //justifyContent: 'space-between',
     alignItems: 'center',
   },
   icon: {
@@ -40,9 +40,19 @@ const styles = StyleSheet.create({
     width: unitWidth*40,
     height: unitWidth*40,
   },
+  change: {
+    marginRight: unitWidth*10,
+    width: unitWidth*60,
+    height: unitWidth*60,
+    position: 'relative',
+    left: unitWidth*-10,
+  },
   title: {
     color: '#2a2a2a',
-    fontSize: 14,
+    fontFamily: 'SourceHanSansCN-Medium',
+    fontSize: unitWidth*28,
+    position: 'relative',
+    top: unitWidth*9,
   },
   arrow: {
     width: unitWidth*17,
